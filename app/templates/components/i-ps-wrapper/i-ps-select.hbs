@@ -1,0 +1,8 @@
+{{#power-select
+  selected=selected
+  options=options
+  onchange=(action "doChange")
+  as |name|
+}}
+  {{yield name}}
+{{/power-select}}

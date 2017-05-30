@@ -1,0 +1,8 @@
+Wrapper
+{{yield
+  (hash
+    i-ps-select=(component "i-ps-wrapper/i-ps-select" options=options selected=selected didChange=(action "didChange"))
+    i-ps-clear=(component "i-ps-wrapper/i-ps-clear" onClear=(action "didClear"))
+    i-ps-add=(component "i-ps-wrapper/i-ps-add" onAdd=(action "didAdd"))
+  )
+}}

@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+{{input name="in" value=inputValue}}
+{{#i-ps-wrapper options=names selected="Tomster" as |i-ps|}}
+  {{#i-ps.i-ps-select as |name|}}
+    prefif {{name}}
+  {{/i-ps.i-ps-select}}
+  {{i-ps.i-ps-clear}}
+  {{i-ps.i-ps-add value=inputValue}}
+{{/i-ps-wrapper}}
 {{outlet}}
